@@ -1,0 +1,79 @@
+TYTUŁ: Trzy sposoby przetwarzania informacji
+Odbiorca: osoba początkująca
+
+TABELA
+Typ | Zasada działania | Dane i zastosowanie | Ograniczenie
+Transformer | Analizuje powiązania między elementami danych | Tekst i pytania; ChatGPT | Może wymagać dużej mocy obliczeniowej
+CNN | Analizuje fragmenty danych i wykrywa wzory | Zdjęcia produktów; wykrywanie pęknięć | Może mieć trudności z odległymi zależnościami
+RNN | Analizuje dane po kolei i wykorzystuje wcześniejsze informacje | Pomiary temperatury; przewidywanie zmian | Może mieć trudności z pamiętaniem odległych zależności
+Co upraszcza nasz schemat: 
+Schemat pomija wiele warstw obliczeniowych, szczegółowe obliczenia oraz proces uczenia sieci na przykładach.
+SCHEMAT CNN:
+
+Zdjęcie produktu
+       |
+       v
+Wykrywanie krawędzi i kształtów
+       |
+       v
+Analiza wykrytych cech
+       |
+       v
+Wynik: produkt dobry lub uszkodzony
+
+SPRAWDZONE TWIERDZENIA
+1. CNN wykrywa charakterystyczne cechy obrazów Źródło: IBM - Convolutional Neural Networks
+   https://www.ibm.com/think/topics/convolutional-neural-networks
+2. RNN wykorzystuje informacje z poprzednich kroków
+   podczas analizowania kolejnych danych Źródło:  IBM - Recurrent Neural Networks
+   https://www.ibm.com/think/topics/recurrent-neural-networks
+
+CO POPRAWILIŚMY I DLACZEGO: 
+1. Uprościliśmy opisy CNN, RNN i Transformer,
+   aby były zrozumiałe dla początkujących.
+
+2. Dodaliśmy przykłady zastosowania sieci
+   neuronowych w przemyśle.
+
+3. Przygotowaliśmy uproszczony schemat CNN
+   i wyjaśniliśmy, czego on nie pokazuje.
+
+4. Sprawdziliśmy dwa twierdzenia w źródłach IBM,
+   aby potwierdzić poprawność informacji.
+
+POPRAWKA OPISU TRANSFORMERA
+
+Transformer to rodzaj sieci neuronowej, która wykorzystuje mechanizm uwagi (attention). Dzięki niemu model może sprawdzać, które słowa w zdaniu są najważniejsze dla zrozumienia konkretnego słowa.
+
+Przykład:
+"Janek odłożył telefon na stół, ponieważ był ciężki."
+
+Aby zinterpretować słowo "był", model analizuje kontekst całego zdania i powiązania między słowami. Mechanizm attention pomaga ustalić, że określenie "ciężki" odnosi się najprawdopodobniej do telefonu.
+
+ODLEGŁE ZALEŻNOŚCI
+
+Odległa zależność występuje wtedy, gdy informacje potrzebne do zrozumienia danego słowa znajdują się znacznie wcześniej w tekście.
+
+Przykład:
+"Silnik maszyny, który przeszedł kilka przeglądów technicznych i pracował przez wiele godzin, zatrzymał się."
+
+Aby właściwie zrozumieć zdanie, model musi powiązać słowa "zatrzymał się" z wyrazem "silnik", mimo że rozdziela je wiele innych słów.
+
+Transformer dzięki mechanizmowi attention może analizować takie powiązania bez przetwarzania tekstu wyłącznie słowo po słowie, jak w klasycznej sieci RNN.
+
+PRZYKŁAD POPRAWY ODPOWIEDZI AI
+
+Pierwotny opis:
+Transformer analizuje powiązania między elementami danych.
+
+Co było niewystarczające:
+Opis nie wyjaśniał mechanizmu attention ani odległych zależności.
+
+Co poprawiłem:
+Dodałem wyjaśnienie mechanizmu uwagi oraz przykłady z telefonem i silnikiem maszyny.
+
+Dlaczego:
+Chciałem pokazać, jak Transformer wykorzystuje kontekst oraz czym różni się od klasycznej sieci RNN.
+
+Wniosek:
+Odpowiedzi AI trzeba sprawdzać i uzupełniać przykładami, aby były poprawne i zrozumiałe.
